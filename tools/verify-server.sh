@@ -1,4 +1,7 @@
 #!/bin/sh
 set -euv
-cd ../server
+
+cd $(dirname "$0")/../server
+
+# Server Checks
 ./gradlew test
